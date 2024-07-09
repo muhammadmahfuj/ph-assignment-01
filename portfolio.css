@@ -2,6 +2,7 @@
    --color-primary:#0D1321 ;
    --color-secondary: #FAFAFB;
    --color-footer: #F7F8F8;
+   --color-accent: #000072;
    --max-width: 114rem;
 
 }
@@ -20,6 +21,9 @@ body{
    font-family: "Azeret Mono", monospace, Arial, Helvetica, sans-serif;
    font-size: 1.6rem;
    line-height: 1.5;
+}
+.main{
+   margin: auto;
    max-width: var(--max-width);
 }
 h1, h2, h3, p {
@@ -38,6 +42,10 @@ h3 {
 a{
    text-decoration: none;
 }
+a:link, a:visited, a:hover, a:active {
+   color: inherit;
+ }
+
 li{
    list-style: none;
 }
@@ -47,8 +55,52 @@ li{
    border-radius: 1.6rem;
 }
 
+.btn{
+   border-radius: 0.8rem;
+   font-size: 2rem;
+   font: 600;
+   text-align: center;
+   padding: 1.7rem 2.4rem;
+}
+.btn-primary{
+   border: 1px solid var(--color-primary) ;
+   background-color: var(--color-secondary);
+   transition: background-color 0.15s, color 0.15s;
+}
+
+.btn-primary:hover{
+   background-color: var(--color-accent);
+   color: var(--color-secondary);
+}
+.btn-primary:active, .btn-primary:visited{
+   color: var(--color-secondary);
+}
 /* header */
    /* nav */
+   .logo{
+      font-size: 2.8rem;
+      font-weight: 600;
+   }
+   .navbar{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 3.8rem 15rem;
+   }
+   .nav-items{
+      display: flex;
+      gap: 4rem;
+   }
+   .nav-heads{
+      display: flex;
+      justify-content:flex-end;
+      align-items: center;
+      gap: 4rem;
+      transition: color 0.15s;
+   }
+   .nav-titles:hover{
+      color: var(--color-accent);
+   }
    /* hero */
 
 /* body */
