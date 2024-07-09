@@ -17,6 +17,7 @@
 }
 html {
    font-size: 62.5%;
+   background-color: #ffff;
 }
 body{
    color: var(--color-body-text);
@@ -96,7 +97,7 @@ li{
 
    /* hero */
    .hero{
-      background-image: url(/assets/Hero-bg.png);
+      background-image: url(assets/Hero-bg.png);
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -126,6 +127,9 @@ li{
 
 /* body */
    /* why web dev */
+   .why-web-dev{
+      background-color: var(--color-background);
+   }
    /* inspiration */
    /* current target */
    /* next target */
