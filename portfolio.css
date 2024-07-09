@@ -1,6 +1,7 @@
 :root{
    --color-primary:#0D1321 ;
    --color-secondary: #FAFAFB;
+   --color-background: #C4C4C4;
    --color-footer: #F7F8F8;
    --color-accent: #000072;
    --max-width: 114rem;
@@ -11,10 +12,11 @@
 /* global styles */
 *{
    box-sizing: border-box;
+   margin: 0;
+   padding: 0;
 }
 html {
    font-size: 62.5%;
-   background-color: var(--color-background);
 }
 body{
    color: var(--color-body-text);
@@ -67,8 +69,12 @@ li{
    background-color: var(--color-secondary);
    transition: background-color 0.15s, color 0.15s;
 }
-
-.btn-primary:hover{
+.btn-secondary{
+   color: var(--color-secondary);
+   background-color: var(--color-primary);
+   transition: background-color 0.15s, color 0.15s;
+}
+.btn-primary:hover, .btn-secondary:hover{
    background-color: var(--color-accent);
    color: var(--color-secondary);
 }
@@ -89,6 +95,34 @@ li{
    }
 
    /* hero */
+   .hero{
+      background-image: url(/assets/Hero-bg.png);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .hero-main{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      max-width: 100rem;
+      max-height: 60rem;
+      margin: 3rem 0;
+      gap: 3rem;
+   }
+   .hero-text{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      gap: 3rem;
+   }
 
 /* body */
    /* why web dev */
