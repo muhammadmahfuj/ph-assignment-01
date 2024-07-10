@@ -229,7 +229,7 @@ li{
    .support-me{
       background-image:linear-gradient(45deg,
       rgba(0, 0, 0, 0.75),
-      rgba(0, 0, 0, 0.2)), url(assets/handshake.jpg);
+      rgba(0, 0, 0, 0.2)), url(/assets/handshake.jpg);
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
